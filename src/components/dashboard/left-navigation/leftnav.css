@@ -1,0 +1,18 @@
+
+.left-navigation{
+  text-align: left;
+  background-color: #000;
+  padding-left: 2px;
+  min-height:500px;
+}
+
+.nav a{
+  padding:15px;
+  color: grey
+}
+
+.nav a:hover {
+  background-color: #06A9D3;
+  color: #EEE
+}
+  
