@@ -1,0 +1,13 @@
+.input-box{
+    background-color: #1D2025;
+    min-height:600px;
+    border-bottom:1px solid grey;
+    padding-bottom: 7px;
+  }
+
+  .input-data{
+    background-color: coral;
+    color: black;
+    width: 350px;
+  }
+  

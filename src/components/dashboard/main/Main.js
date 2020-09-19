@@ -11,7 +11,8 @@ export default class Main extends Component{
 
     render(){
         return (
-            <div>asd a
+            <div className="text-white"> 
+            <input type="text" placeholder="enter mobile number"/>
                 {/* <Switch>
                     <Route exact path="/dashboard/main" component={Main}/>
                 </Switch> */}
