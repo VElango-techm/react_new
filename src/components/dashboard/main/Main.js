@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Mobile from '../../common/InputItems/mobile';
+import alphaNumeric from '../../common/InputItems/alphaNumeric'
+
 
 export default class Main extends Component{
     constructor(props){
@@ -12,10 +15,14 @@ export default class Main extends Component{
     render(){
         return (
             <div className="text-white"> 
-            <input type="text" placeholder="enter mobile number"/>
-                {/* <Switch>
-                    <Route exact path="/dashboard/main" component={Main}/>
-                </Switch> */}
+            <BrowserRouter>
+                    <Switch>
+                        {/* <Route exact path="/mobile" component={Mobile} />
+                        <Route exact path="/alphanumeric" component={alphaNumeric} /> */}
+                    </Switch>
+            </BrowserRouter>
+                {/* <input type="text" placeholder="enter mobile number"/> */}
+                {/* <InputUtility inputPlaceholder="Enter Mobile number" label="Mobile Number Validation" /> */}
             </div>
         )
     }

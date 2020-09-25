@@ -3,7 +3,7 @@
   text-align: left;
   background-color: #000;
   padding-left: 2px;
-  min-height:500px;
+  min-height:600px;
 }
 
 .nav a{
@@ -14,5 +14,9 @@
 .nav a:hover {
   background-color: #06A9D3;
   color: #EEE
+}
+
+a:hover{
+  text-decoration: none;
 }
   

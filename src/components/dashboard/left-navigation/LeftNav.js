@@ -13,12 +13,53 @@ function LeftNav() {
                     }}>
                     Mobile Number
                 </Link>
-
+                <Link
+                    to={{
+                        pathname: '/email'
+                    }}>
+                    Email
+                </Link>
                 <Link
                     to={{
                         pathname: '/alphanumeric'
                     }}>
                     Alphanumeric
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/autocomplete'
+                    }}>
+                    Autocomplete
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/typeHead'
+                    }}>
+                    TypeHead
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/Checkbox'
+                    }}>
+                    checkbox
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/datepicker'
+                    }}>
+                    Date Picker
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/dropdown'
+                    }}>
+                    Dropdown
+                </Link>
+                <Link
+                    to={{
+                        pathname: '/messagebox'
+                    }}>
+                    Message box
                 </Link>
                 {/* <Nav.Link to="/mobile" >Mobile Number</Nav.Link>
                         <Nav.Link to="/email">Email id</Nav.Link>

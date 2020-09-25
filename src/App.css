@@ -13,6 +13,9 @@
   }
 }
 
+h5, label{
+  color: #EEE;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +39,42 @@
     transform: rotate(360deg);
   }
 }
+
+input {
+	outline: none;
+}
+
+input[type=search] {
+	background: #EEE url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 125px;
+	
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border-radius: 5em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 260px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+

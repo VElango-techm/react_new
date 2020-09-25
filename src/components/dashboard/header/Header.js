@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Col,Row, Image} from 'react-bootstrap';
+import {Container,Col,Row, Image, DropdownButton, Dropdown} from 'react-bootstrap';
 import techMLogo from '../../../asset/techm_logo.png';
 import reactLogo from '../../../asset/login_react_logo.png';
 import uxmLogo from '../../../asset/uxm_logo_sm.png';
@@ -31,10 +31,12 @@ function Header(){
                     </Col>
                     <Col md={4} className="mt-3 text-white text-left">
                         <Image src={reactLogo} className="float-left mr-2"/>
-                        <p className="mt-2">REACT COMPONENT PORTAL</p>
+                        <p className="mt-2 lead">REACT COMPONENT PORTAL</p>
                     </Col>
-                    <Col md={3} className="mt-4 text-white text-left">
-                        <FaSearch size={25} /> Search Component
+                    <Col md={3} className="mt-3 text-white text-center lead">
+                        {/* <FaSearch size={20} /> Search Component */}
+                        <input type="search" placeholder="search component" />
+                        
                     </Col>
                     <Col md={3} className="mt-3 text-white text-right" >
                         <FaUserCircle size={25}/>

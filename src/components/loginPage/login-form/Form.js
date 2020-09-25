@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './form.css';
 import { Form, Button } from 'react-bootstrap'
 import data from '../../service/data.json';
-import {  Redirect } from 'react-router-dom';
+import { Redirect } from "react-router-dom";
 
 export default class LoginForm extends Component {
     constructor(props) {
@@ -80,42 +80,44 @@ export default class LoginForm extends Component {
     }
 
     loginHandler = e => {
+        // const history = useHistory();
         e.preventDefault();
-        data.filter(item => {
-            if (this.state.form.userName === item.username && this.state.form.password === item.password) {
-                this.setState({
-                    formError: {
-                        userName: "",
-                        password: ""
-                    },
-                    authError: true,
-                    isAuthenticated: true
-                })
-            } 
-            else {
-                this.setState({
-                    formError: {
-                        userName: "Please enter valid user name",
-                        password: "Please enter valid password"
-                    },
-                    authError: true,
-                })
-            }
-        })
+        let userExist = data.filter((item) => this.state.form.userName === item.username && this.state.form.password === item.password);
+        if (userExist.length === 1) {
+            debugger;
+            this.setState({
+                formError: {
+                    userName: "",
+                    password: ""
+                },
+                authError: true,
+                isAuthenticated: true
+            })
+            //history.push("/dashboard");
+        }
+        else {
+            this.setState({
+                formError: {
+                    userName: "Please enter valid user name",
+                    password: "Please enter valid password"
+                },
+                authError: true,
+            })
+        }
     }
 
-    render() { 
-        const { form, formError, invalid, authError,isAuthenticated } = this.state
-        return ( 
+    render() {
+        const { form, formError, invalid, authError, isAuthenticated } = this.state
+        return (
             <div>
-                 {isAuthenticated &&
-                    <Redirect to="/dashboard" />
+                {isAuthenticated &&
+                    <Redirect to="/mobile" />
                 }
                 <Form className="form_box" onSubmit={this.loginHandler}>
                     {authError === true &&
                         <h3 className="text-white">Please enter valid credentials</h3>
                     }
-                   
+
                     <h2 className="text-white text-left mb-4">LOGIN</h2>
                     <Form.Group controlId="formBasicUser">
                         <Form.Control
@@ -138,7 +140,7 @@ export default class LoginForm extends Component {
                             name="password"
                             value={form.password}
                             placeholder="Password"
-                            onChange={this.handleChange} 
+                            onChange={this.handleChange}
                             className={formError.password !== "" ? 'is-invalid' : ''} />
 
                         <Form.Text className="text-danger">
@@ -156,8 +158,8 @@ export default class LoginForm extends Component {
                         Submit
                     </Button>
                 </Form>
-                
-                
+
+
             </div>
         )
     }
