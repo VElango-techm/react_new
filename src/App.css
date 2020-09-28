@@ -78,3 +78,20 @@ input::-webkit-input-placeholder {
 }
 
 
+
+#first-row{text-align: right;align-self: center;}
+@media(max-width:920px) and (min-width:768px){
+.swaprow1 .btn-lg {
+  padding: 7px 13px;
+}
+}
+@media(max-width:767px){
+  .uxmLogo img{width:80%}
+  #first-row{text-align: left}
+  .swaprow.row ,.swaprow1.row{display: flex;}  
+  [id$='-row'] {order: 2;}
+  #first-row {order: 2;}
+  #second-row {order: 1;}  
+  #first-row1{order: 2;}
+  #second-row2 {order: 1;}
+}

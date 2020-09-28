@@ -1,19 +1,8 @@
 .bg-img{
-    /* background-color: #000; */
     background-image: url(../../asset/login_bg.png);
     min-height:750px;
+    padding-bottom: 50px;
 }
-
 .uxmLogo{
-    min-height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.formItem{
-    min-height: 500px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }

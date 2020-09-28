@@ -1,6 +1,9 @@
 .form_box{
-    padding:10% 12%;
+    padding:10%;
     background-color: rgba(255,255,255,0.2);
-    margin-top: 20%;
-    min-height: 400px;
+    margin: 10% auto 20%;
+}
+.text-danger {
+    color: #dc3545!important;
+    text-align: right;
 }
