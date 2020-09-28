@@ -81,7 +81,7 @@ input::-webkit-input-placeholder {
 
 #first-row{text-align: right;align-self: center;}
 @media(max-width:920px) and (min-width:768px){
-.swaprow1 .btn-lg {
+.swaprow1 .btn-lg { 
   padding: 7px 13px;
 }
 }
