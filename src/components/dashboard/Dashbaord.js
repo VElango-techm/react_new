@@ -10,7 +10,7 @@ import Main from './main/Main'
 function Dashboard(props) {
     return (
         <main>
-            <div style={{ backgroundColor: '#1D2025' }}>
+            <div className="maindiv">
                 <Header />
                 <Container fluid>
                     <Row>

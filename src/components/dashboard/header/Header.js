@@ -15,12 +15,9 @@ export default class Header extends Component {
         const drplist = this.state.isOpen;
         this.setState({ isOpen: !drplist });
     };
-    // $('.catalog-test').click(function () {
-    //     $('html').toggleClass('themechange')
-    // });
     render() {
         return (
-            <div style={{ backgroundColor: '#1D2025', borderBottom: '1px solid grey', paddingBottom: '7px' }}>
+            <div className="header">
                 {/* <Col md={2} className="ml-5 mt-3 p-0 border-right text-left">
                         <Image src={techMLogo} />
                     </Col>

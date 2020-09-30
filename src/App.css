@@ -56,10 +56,22 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-body.invertTheme {
+/* body.invertTheme {
   filter: invert(100%);
+} */
+.header{
+  background-color: rgb(29, 32, 37);
+  border-bottom: 1px solid grey;
+  padding-bottom: 7px;
 }
-
+.maindiv{
+  background: #1D2025
+}
+.text-left .form-control{
+  background-color:#ea9a23!important;
+  border-color:#ea9a23!important;
+  color:#fff!important
+}
 
 
 
@@ -159,4 +171,19 @@ input::-webkit-input-placeholder {
   #second-row {order: 1;}  
   #first-row1{order: 2;}
   #second-row2 {order: 1;}
+}
+
+
+
+body.invertTheme .header,body.invertTheme .maindiv{
+  background: #fff
+}
+body.invertTheme .left-navigation{
+  background: grey; 
+}
+body.invertTheme .left-navigation.nav a{
+  color:#000
+}
+body.invertTheme .text-white,body.invertTheme .text-left h5 {
+  color: #000!important;
 }

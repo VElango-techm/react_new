@@ -8,7 +8,7 @@ import Login from '../loginPage/Login'
 
 function Layout(props) {
     return (
-        <div style={{ backgroundColor: '#1D2025' }}>
+        <div className="maindiv">
             {window.location.pathname !== '/' ?
                 <main>
                     <Header />
